@@ -1,2 +1,3 @@
 // This is all you.
-alert('saaa')
+
+import "./components/_projects_slider.js";
