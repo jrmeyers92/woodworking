@@ -1,0 +1,30 @@
+{{ get_content from="{uri}" }}
+
+<style>
+    .box {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .hero {
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+            ),
+            url("{{hero_background_image}}");
+    }
+</style>
+
+<section
+    class="hero bg-no-repeat bg-cover min-h-screen max-h-screen flex items-center justify-center"
+>
+    <div class="flex items-center justify-center h-full w-full">
+        <div class="box rounded-md text-center p-12 backdrop-blur-md">
+            <h1 class="text-6xl md:text-7xl mb-4 md:mb-6">{{hero_title}}</h1>
+            <h2 class="text-4xl lg:text-5xl uppercase tracking-wide font-light">
+                {{hero_sub_title}}
+            </h2>
+        </div>
+    </div>
+</section>
+
+{{/get_content}}
