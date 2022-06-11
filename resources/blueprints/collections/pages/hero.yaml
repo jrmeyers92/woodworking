@@ -1,0 +1,24 @@
+title: Hero
+sections:
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
