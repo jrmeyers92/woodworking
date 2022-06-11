@@ -1,3 +1,2 @@
-// This is all you.
-
-import "./components/_projects_slider.js";
+import "./components/_contact_modal.js";
+import "./components/_modal.js";
