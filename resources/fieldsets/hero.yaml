@@ -1,0 +1,38 @@
+title: Hero
+fields:
+  -
+    handle: hero_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Hero Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: hero_sub_title
+    field:
+      antlers: false
+      display: 'Hero Sub Title'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: hero_background_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'Hero Background Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      read_only: false
