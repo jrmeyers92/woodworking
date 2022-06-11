@@ -22,6 +22,19 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./resources/css/cp.css":
+/*!******************************!*\
+  !*** ./resources/css/cp.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -111,6 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/site": 0,
+/******/ 			"vendor/app/css/cp": 0,
 /******/ 			"css/tailwind": 0
 /******/ 		};
 /******/ 		
@@ -161,8 +175,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/tailwind"], () => (__webpack_require__("./resources/js/site.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/tailwind"], () => (__webpack_require__("./resources/css/tailwind.css")))
+/******/ 	__webpack_require__.O(undefined, ["vendor/app/css/cp","css/tailwind"], () => (__webpack_require__("./resources/js/site.js")))
+/******/ 	__webpack_require__.O(undefined, ["vendor/app/css/cp","css/tailwind"], () => (__webpack_require__("./resources/css/tailwind.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendor/app/css/cp","css/tailwind"], () => (__webpack_require__("./resources/css/cp.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
