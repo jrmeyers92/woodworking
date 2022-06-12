@@ -1,8 +1,22 @@
 <modal-popup id="contactModal" class="m-2 md:m-4 lg:m-6">
         <div class="relative w-full max-w-xl max-h-screen xl:max-h-2/3 overflow-hidden rounded bg-white p-2 sm:p-4 md:p-8 xl:p-10 ">
-            <h1>Get in touch!</h1>
-            <label for="contactModalName">Name:</label>
-            <input type="text" name="contactModalName" id="contactModalName">
+            <h1 class="text-2xl mb-4">Get in touch!</h1>
+                <div class="border border-black p-2 my-2">
+                    <label for="contactModalName">Name:</label>
+                    <input type="text" name="contactModalName" id="contactModalName" required class="outline-none">
+                </div>
+                <div class="border border-black p-2 my-2">
+                    <label for="contactModalEmail">Email:</label>
+                    <input type="email" name="contactModalEmail" id="contactModalEmail" required class="outline-none">
+                </div>
+                <div class="border border-black p-2 my-2">
+                    <label for="contactModalMessage" class="align-top">Message:</label>
+                    <textarea name="contactModalMessage" id="contactModalMessage" cols="30" rows="10" class="outline-none"></textarea>
+                </div>
+
+                <button class="bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-500 px-4 py-2 w-full text-white uppercase tracking-wide duration-200">Send!</button>
         
         </div>
 </modal-popup>
+
+
